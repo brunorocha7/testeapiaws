@@ -7,6 +7,9 @@ app.listen(port, () => {
     console.log('Example app listening at http://localhost:3000')
 });
 
+app.get('/atualizou' ,(request, response)=>{
+    return response.json({message:'AWS funcionando! =)'})
+})
 app.get('/foo', function (req, res) {
     res.json({"foo": "bar"});
 });
