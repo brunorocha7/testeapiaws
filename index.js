@@ -11,10 +11,6 @@ app.get('/atualizou', function (req, res) {
     res.json({"AWS" : "funcionando"});
 });
 
-app.get('/foo', function (req, res) {
-    res.json({"foo": "bar"});
-});
-
 app.use(express.urlencoded({
     extended: true
 }));
